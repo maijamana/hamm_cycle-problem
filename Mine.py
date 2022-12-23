@@ -1,7 +1,6 @@
 """
 Project number 6.
 """
-import os
 import csv
 
 def read_csv(file_name, weight = False):
@@ -115,5 +114,3 @@ def hamm_cycle(file_name, weight = False):
                     return 'Граф не підпадає під теореми Дірака та Оре'
     ind = vertex.index(1)
     return vertex[ind:]+vertex[:ind]+[1]
-
-print(hamm_cycle(r'C:\Users\1\Downloads\Telegram Desktop\graph2.csv'))
