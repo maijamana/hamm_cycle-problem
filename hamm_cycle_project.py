@@ -1,6 +1,3 @@
-"""
-Project number 6.
-"""
 import csv
 
 def read_csv(file_name, weight = False):
@@ -10,7 +7,6 @@ def read_csv(file_name, weight = False):
     second: {first verticl of the pair: weight of the edge of the graph}
     Args:
         file_name: the path to file with graph
-        weight: True if graph is !!!!!!!!!!!!!!!!!!!!!!!!!!11
     Returns:
         dict[int:list] - graph by dictionary
         List[list] - the adjacency matrix
@@ -71,7 +67,6 @@ def hamm_cycle(file_name, weight = False):
     This function solves Hamiltonian path problem
     Args:
         file_name: the path to file with graph
-        weight: uses only to !!!!!!!!!!!!!!!!!!!!! graphs
     Returns:
         List[int] - hamiltonian cycle in graph
     '''
@@ -91,8 +86,6 @@ def hamm_cycle(file_name, weight = False):
                     vertex[index1-1],vertex[index1] = vertex[index1],vertex[index1-1]
                 else:
                     vertex[index2+1],vertex[index2] = vertex[index2],vertex[index2+1]
-    print(vertex)
-    print(graph[0])
     trueth = 0
     i = 0
     len_graph = len(graph[0])+1
